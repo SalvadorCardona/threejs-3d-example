@@ -1,0 +1,11 @@
+.player {
+  position: absolute;
+  z-index: 999;
+  width: 750px;
+  left: calc(50% - 427px);
+  top: 28%;
+}
+
+.container {
+  position: relative;
+}

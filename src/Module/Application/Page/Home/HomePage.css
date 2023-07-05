@@ -1,0 +1,32 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+ul {
+
+}
+
+.wrapper > div {
+  @apply flex flex-row justify-center items-center ;
+}
+
+.wrapper > div > button {
+  @apply bg-white/50 w-32 h-32 rounded-full m-5 inline-flex justify-center items-center shadow-lg;
+  transform: translate(0, 0) scale(1);
+  transition: all 0.6s ease;
+}
+
+.wrapper > div > button:hover {
+  transition: all 0.6s ease;
+  transform:  scale(1.35);
+  transform-origin: center;
+  @apply shadow-2xl ;
+}
+
+
+.wrapper > div.second > button {
+  @apply mx-28 ;
+}
+
+
