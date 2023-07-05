@@ -46,7 +46,10 @@ export function TopMenuComponent() {
                   >
                     {childrenRoute.map((route) => {
                       return (
-                        <li className="rounded-sm px-3 py-1 hover:bg-gray-100">
+                        <li
+                          className="rounded-sm px-3 py-1 hover:bg-gray-100"
+                          key={route.id}
+                        >
                           <Link
                             className="rounded-sm px-3 py-1 hover:bg-gray-100"
                             to={route.path}

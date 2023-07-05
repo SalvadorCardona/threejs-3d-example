@@ -8,10 +8,8 @@ import sceneUrl from "./Asset/cooking.glb?url"
 import { Canvas } from "@react-three/fiber"
 import { Physics, RigidBody } from "@react-three/rapier"
 import { PlayerComponent } from "@/Module/Application/Page/Cooking/Component/PlayerComponent.tsx"
-
 import { useCookingGameStore } from "@/Module/Application/Page/Cooking/Store/cookingStore.ts"
 import { ClientGeneratorComponent } from "@/Module/Application/Page/Cooking/Component/ClientGeneratorComponent.tsx"
-import { Mesh } from "three"
 import createSelectorsByScene from "@/Module/Shared/Application/createSelectorsByScene.ts"
 import { SeaComponent } from "@/Module/Application/Page/Cooking/Component/SeaComponent.tsx"
 

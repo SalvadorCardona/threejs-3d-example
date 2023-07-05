@@ -38,56 +38,14 @@ export const childrenRoute: RouteObjectApp[] = [
     path: "/",
     element: <HomePage />,
     id: RoutesEnum.MAIN,
-    name: RoutesEnum.MAIN,
+    name: "Faux Océan",
     index: true,
-  },
-  {
-    path: "/game",
-    element: <GamePage />,
-    id: RoutesEnum.GAME,
-    name: RoutesEnum.GAME,
-  },
-  {
-    path: "/video",
-    element: <VideoPage />,
-    id: RoutesEnum.VIDEO,
-    name: RoutesEnum.VIDEO,
-  },
-  {
-    path: "/" + RoutesEnum.Fiber,
-    element: <FiberTestPage />,
-    id: RoutesEnum.Fiber,
-    name: RoutesEnum.Fiber,
-  },
-  {
-    path: "/" + RoutesEnum.SHOES,
-    element: <ShoesPage />,
-    id: RoutesEnum.SHOES,
-    name: RoutesEnum.SHOES,
-  },
-  {
-    path: "/" + RoutesEnum.BOOLING,
-    element: <BoolingPage />,
-    id: RoutesEnum.BOOLING,
-    name: RoutesEnum.BOOLING,
-  },
-  {
-    path: "/" + RoutesEnum.CINEMA,
-    element: <CinemaPage />,
-    id: RoutesEnum.CINEMA,
-    name: RoutesEnum.CINEMA,
-  },
-  {
-    path: "/" + RoutesEnum.CITY,
-    element: <CityPage />,
-    id: RoutesEnum.CITY,
-    name: RoutesEnum.CITY,
   },
   {
     path: "/" + RoutesEnum.IMPORT_FIBER,
     // element: <ImportFiberAsync />,
     id: RoutesEnum.IMPORT_FIBER,
-    name: RoutesEnum.IMPORT_FIBER,
+    name: "Open World",
     async lazy() {
       let { ImportFiber } = await import(
         "@/Module/Application/Page/ImportFiber/ImportFiber.tsx"
@@ -99,7 +57,7 @@ export const childrenRoute: RouteObjectApp[] = [
     path: "/" + RoutesEnum.COOKING,
     // element: <ImportFiberAsync />,
     id: RoutesEnum.COOKING,
-    name: RoutesEnum.COOKING,
+    name: "Copy Overcooked",
     async lazy() {
       let { CookingPage } = await import(
         "@/Module/Application/Page/Cooking/CookingPage.tsx"
@@ -107,11 +65,44 @@ export const childrenRoute: RouteObjectApp[] = [
       return { Component: CookingPage }
     },
   },
+
+  {
+    path: "/video",
+    element: <VideoPage />,
+    id: RoutesEnum.VIDEO,
+    name: "Example 3D plus un lecteur vidéo",
+  },
+
+  {
+    path: "/" + RoutesEnum.SHOES,
+    element: <ShoesPage />,
+    id: RoutesEnum.SHOES,
+    name: "Chaussure qui change de couleur",
+  },
+  {
+    path: "/" + RoutesEnum.BOOLING,
+    element: <BoolingPage />,
+    id: RoutesEnum.BOOLING,
+    name: "Mini Bowling",
+  },
+  {
+    path: "/" + RoutesEnum.CINEMA,
+    element: <CinemaPage />,
+    id: RoutesEnum.CINEMA,
+    name: "Example de vidéo 3D",
+  },
+  {
+    path: "/" + RoutesEnum.CITY,
+    element: <CityPage />,
+    id: RoutesEnum.CITY,
+    name: "Example de shader possible",
+  },
+
   {
     path: "/" + RoutesEnum.BUILDER,
     // element: <ImportFiberAsync />,
     id: RoutesEnum.BUILDER,
-    name: RoutesEnum.BUILDER,
+    name: "Builder :  WI",
     async lazy() {
       let { BuilderPage } = await import(
         "@/Module/Application/Page/Builder/BuilderPage.tsx"
