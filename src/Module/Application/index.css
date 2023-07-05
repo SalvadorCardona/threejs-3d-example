@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Gilmer";
-  src: url("./font/Gilmer-Medium.otf");
+  src: url("/font/Gilmer-Medium.otf");
 }
 
 html, body {
